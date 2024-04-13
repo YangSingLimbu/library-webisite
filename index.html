@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>College Library</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -80,6 +80,21 @@
             <input id="submit" type="submit" value="Submit" />
           </div>
         </form>
+      </section>
+      <section class="fine_calculation">
+        <h2>Fine Calculation</h2>
+        <div class="container">
+          <div class="issue">
+            <label for="issue_date">Issue Date:</label><br />
+            <input type="date" name="issueDate" id="issue_date" />
+          </div>
+          <div class="submission">
+            <label for="submission_date">Submission Date:</label><br />
+            <input type="date" name="submissionDate" id="submission_date" />
+          </div>
+          <button class="find_fine">Find</button>
+          <span class="fine"></span>
+        </div>
       </section>
     </main>
     <footer>

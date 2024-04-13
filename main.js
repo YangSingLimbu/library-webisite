@@ -137,3 +137,20 @@ document.querySelector("form").addEventListener("submit", function (event) {
 
   alert("The form is submitted");
 });
+
+//calculating fine
+document.querySelector(".find_fine").addEventListener("click", function () {
+  const issueDate = new Date(document.querySelector("#issue_date").value);
+  const submissionDate = new Date(
+    document.querySelector("#submission_date").value
+  );
+
+  const differenceInDays = (submissionDate - issueDate) / (1000 * 3600 * 24);
+
+  let fine = 0;
+  if (differenceInDays > 14) {
+    fine = (differenceInDays - 14) * 2;
+  }
+
+  document.querySelector(".fine").textContent = `Your fine is $${fine}`;
+});

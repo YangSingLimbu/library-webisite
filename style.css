@@ -230,6 +230,46 @@ input {
   background-color: white;
 }
 
+.fine_calculation {
+  margin-top: 3rem;
+}
+
+.fine_calculation h2 {
+  font-size: 5rem;
+  text-align: center;
+}
+
+.fine_calculation .container {
+  display: flex;
+  border: 3px solid white;
+  flex-direction: column;
+  width: 50rem;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem auto;
+  padding: 3rem 5rem;
+  border-radius: 10px;
+}
+
+.fine_calculation .container label {
+  font-size: 2rem;
+}
+
+.fine_calculation .container input {
+  font-size: 2rem;
+  width: 300px;
+  margin-bottom: 3rem;
+}
+.find_fine {
+  width: 10rem;
+  font-size: 2rem;
+}
+
+.fine {
+  font-size: 2.5rem;
+  margin-top: 2rem;
+}
+
 .footer-content {
   color: #fff;
   text-align: center;
@@ -365,5 +405,22 @@ input {
 
   #specialRequests {
     width: 270px;
+  }
+
+  .fine_calculation h2 {
+    font-size: 3rem;
+  }
+
+  .fine_calculation .container {
+    width: 30rem;
+  }
+
+  .fine_calculation .container label {
+    font-size: 1.5rem;
+  }
+
+  .fine_calculation .container input {
+    font-size: 1.5rem;
+    width: 15rem;
   }
 }
