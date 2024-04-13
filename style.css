@@ -1,0 +1,368 @@
+@import url("https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Bakbak One";
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+header .main-nav {
+  height: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 12rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: black;
+}
+header .main-nav ul {
+  display: flex;
+  width: 25rem;
+  justify-content: space-between;
+  font-size: 2rem;
+  list-style: none;
+}
+
+.main-nav ul li a {
+  color: white;
+}
+
+.main-nav .logo a {
+  font-size: 2.3rem;
+  font-weight: 700;
+  color: white;
+}
+
+.main-nav ul li a:hover {
+  color: red;
+}
+
+.main-nav .logo a:hover {
+  color: rgb(224, 210, 210);
+}
+
+#home {
+  background-image: url(img/pexels-stanislav-kondratiev-2908984.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: fixed;
+  background-position: center;
+  min-height: 100vh;
+  overflow: auto;
+  padding: 3rem 5rem;
+
+  display: flex;
+}
+
+.right {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right img {
+  width: 40rem;
+}
+
+#home h1 {
+  margin-top: 10rem;
+  font-size: 5rem;
+  width: 66rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add this line */
+}
+
+.left p {
+  font-size: 2rem;
+  font-family: "Georgia", serif;
+  text-align: center;
+  width: 60rem;
+  margin-top: 2rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+#menu {
+  padding-top: 7rem;
+}
+
+#menu h2 {
+  font-size: 5rem;
+  text-align: center;
+  margin-top: 5rem;
+}
+
+#menu .items_collections {
+  border: 3px solid white;
+  width: 95%;
+  margin: 0 auto;
+  padding: 1%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-radius: 10px;
+  justify-content: center;
+  margin-top: 5rem;
+}
+
+#menu .collection_item {
+  width: 55rem;
+  display: flex;
+  margin-top: 20px;
+}
+
+.items_collections img {
+  width: 13rem;
+}
+
+.item_details {
+  overflow: hidden;
+  margin-left: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
+.item_details h3 {
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.item_details p {
+  text-align: start;
+  font-size: 2rem;
+}
+
+.item_details label {
+  margin-right: 5px;
+}
+
+#form {
+  padding: 1%;
+}
+
+#form h2 {
+  font-size: 5rem;
+  text-align: center;
+  margin-top: 5rem;
+}
+
+#issueForm {
+  border: 3px solid white;
+  width: 80rem;
+  margin: 3rem auto;
+  border-radius: 10px;
+  padding: 1rem 3rem;
+}
+
+#issueForm label {
+  font-size: 2rem;
+  margin-top: 50px;
+}
+
+input {
+  font-size: 2.3rem;
+  width: 100%;
+  border-radius: 10px;
+  padding: 1%;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.row > div {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.row > div:last-child {
+  margin-right: 0;
+}
+
+#itemType {
+  width: 53rem;
+  font-size: 2rem;
+  text-align: center;
+  background-color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#itemType:hover {
+  background-color: rgb(226, 218, 218);
+}
+#itemCount {
+  width: 5rem;
+  text-align: center;
+}
+#specialRequests {
+  width: 80%;
+  height: 10rem;
+  margin-bottom: 1.5rem;
+}
+
+.submit {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#submit {
+  width: 15rem;
+  background-color: white;
+}
+
+.footer-content {
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  font-size: 2rem;
+}
+
+.footer-content p {
+  margin: 0;
+  padding: 5px;
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 60%;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+
+  header .main-nav {
+    padding: 2rem 2%;
+  }
+
+  .right img {
+    display: none;
+  }
+
+  #home {
+    height: 400px;
+  }
+  #home h1 {
+    font-size: 3.5;
+    width: 44rem;
+  }
+
+  .left p {
+    font-size: 1.5rem;
+    width: 43rem;
+  }
+  #form h2 {
+    font-size: 3rem;
+  }
+  #issueForm {
+    width: 95%;
+  }
+  #issueForm label {
+    font-size: 2rem;
+  }
+  .input {
+    font-size: 1.5em;
+  }
+
+  #itemType {
+    width: 43rem;
+  }
+
+  .rows {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  header .main-nav {
+    padding: 0 5px;
+    height: 40px;
+    justify-content: start;
+  }
+
+  .main-nav .logo a {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: white;
+    margin-right: 80px;
+  }
+
+  header .main-nav ul {
+    width: 38%;
+    font-size: 1.5rem;
+  }
+  #home {
+    padding: 1rem 3rem;
+  }
+  #home h1 {
+    font-size: 4rem;
+    width: 30rem;
+  }
+
+  .left p {
+    font-size: 3rem;
+    width: 30rem;
+  }
+
+  #menu .collection_item {
+    width: 55rem;
+    display: flex;
+    margin-top: 40px;
+  }
+
+  .items_collections img {
+    width: 10rem;
+  }
+
+  .item_details h3 {
+    font-size: 1.8rem;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  #issueForm label {
+    font-size: 1.7rem;
+    margin-top: 50px;
+  }
+
+  input {
+    font-size: 1.7rem;
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  .row div input {
+    width: 270px;
+  }
+
+  #itemType {
+    width: 270px;
+  }
+
+  #specialRequests {
+    width: 270px;
+  }
+}

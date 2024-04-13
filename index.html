@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="main-nav">
+        <span class="logo"><a href="index.html">Library</a></span>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#form">Form</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="home">
+        <div class="left">
+          <h1>Unlock a World of Knowledge at Our College Library!</h1>
+          <p>
+            "In a good bookroom you feel in some mysterious way that you are
+            absorbing the wisdom contained in all the books through your skin,
+            without even opening them." - Mark Twain
+          </p>
+        </div>
+
+        <div class="right">
+          <img src="./img/Animation - 1712933453134.gif" alt="" srcset="" />
+        </div>
+      </section>
+
+      <section id="menu">
+        <h2 class="menu_title">Menu</h2>
+        <div class="collection"></div>
+      </section>
+
+      <section id="form">
+        <h2>Item Issue Form</h2>
+        <form id="issueForm">
+          <div class="row">
+            <div>
+              <label for="name">Name:</label><br />
+              <input type="text" id="name" name="name" required />
+            </div>
+            <div>
+              <label for="contact">Contact Information:</label><br />
+              <input type="text" id="contact" name="contact" required />
+            </div>
+          </div>
+
+          <div class="row rows">
+            <div>
+              <label for="itemType">Item Name:</label><br />
+              <select id="itemType" name="itemType" required></select
+              ><br />
+            </div>
+            <div>
+              <label for="itemCount">Number of Items:</label><br />
+              <input
+                type="number"
+                id="itemCount"
+                name="itemCount"
+                min="1"
+                required
+              /><br />
+            </div>
+          </div>
+          <label for="specialRequests">Special Requests:</label><br />
+          <textarea id="specialRequests" name="specialRequests"></textarea
+          ><br />
+          <div class="submit">
+            <input id="submit" type="submit" value="Submit" />
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-content">
+        <h3>Library Name</h3>
+        <p>123 Library St., City, State, Zip</p>
+        <p>Phone: (123) 456-7890</p>
+        <p>Email: library@library.com</p>
+        <p>Hours: Mon-Fri 9am-5pm</p>
+        <p>&copy; 2022 Library Name</p>
+      </div>
+    </footer>
+    <script src="./main.js"></script>
+  </body>
+</html>
