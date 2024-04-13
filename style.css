@@ -299,6 +299,7 @@ input {
     padding: 0 5px;
     height: 40px;
     justify-content: start;
+    justify-content: space-between;
   }
 
   .main-nav .logo a {
@@ -309,7 +310,7 @@ input {
   }
 
   header .main-nav ul {
-    width: 38%;
+    width: 45%;
     font-size: 1.5rem;
   }
   #home {
