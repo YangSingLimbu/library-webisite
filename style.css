@@ -228,6 +228,11 @@ input {
 #submit {
   width: 15rem;
   background-color: white;
+  color: black;
+}
+
+#submit:hover {
+  background-color: rgb(224, 210, 210);
 }
 
 .fine_calculation {
@@ -407,6 +412,9 @@ input {
     width: 270px;
   }
 
+  #submit {
+    width: 10rem;
+  }
   .fine_calculation h2 {
     font-size: 3rem;
   }
